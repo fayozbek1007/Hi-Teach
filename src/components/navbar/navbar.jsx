@@ -22,15 +22,15 @@ const Navbar = () => {
                 <div className='flex gap-[20px] items-center'>
                     <ul className="flex gap-[30px]">
                         <li className='text-[#FFFFFF] text-[16px] leading-[24px] font-[400] hover:text-gray-300'>
-                            <Link href="">Home</Link>
+                            <Link href="/">Home</Link>
                         </li>
                         <li className='text-[#FFFFFF] text-[16px] leading-[24px] font-[4000] hover:text-gray-300'>
-                            <Link href="">Catalog</Link>
+                            <Link href="/catalog">Catalog</Link>
                         </li>
                         <li className="relative group text-[#FFFFFF] text-[16px] leading-[24px] font-[400] hover:text-gray-300">
                             <Link href="">About us</Link>
                             <ul className="absolute left-0 hidden group-hover:block shadow-lg px-[10px] py-[10px] z-[2] w-[160px] backgroun-li rounded-[15px]">
-                                <li className="text-[white] py-[4px] rounded-[12px] hover:bg-[#6060e6] px-[10px] "><Link href="">Company</Link></li>
+                                <li className="text-[white] py-[4px] rounded-[12px] hover:bg-[#6060e6] px-[10px] "><Link href="/company">Company</Link></li>
                                 <li className="text-[white] py-[4px] rounded-[12px] hover:bg-[#6060e6] px-[10px] "><Link href="">Achievements</Link></li>
                                 <li className="text-[white] py-[4px] rounded-[12px] hover:bg-[#6060e6] px-[10px] "><Link href="">Team</Link></li>
                                 <li className="text-[white] py-[4px] rounded-[12px] hover:bg-[#6060e6] px-[10px] "><Link href="">Gallery</Link></li>

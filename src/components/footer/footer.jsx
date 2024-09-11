@@ -1,16 +1,19 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Footer = () => {
     return (
         <div className='footer-img mt-[10px]'>
             <div className='w-[1200px] h-[585px] mx-[auto] my-0 pt-[68px] flex gap-[40px] justify-between'>
                 <div>
-                    <div className='flex gap-[26px] w-[30%]'>
-                        <img className='w-[99px] h-[82px]' src="/navimg.svg" alt="" />
-                        <h1 className='w-[136px] h-[84px] text-[28px] leading-[28px] font-[600] text-white'>
-                            HI TECH ORIENT MEDICAL
-                        </h1>
-                    </div>
+                    <Link href={"/"}>
+                        <div className='flex gap-[26px] w-[30%]'>
+                            <img className='w-[99px] h-[82px]' src="/navimg.svg" alt="" />
+                            <h1 className='w-[136px] h-[84px] text-[28px] leading-[28px] font-[600] text-white'>
+                                HI TECH ORIENT MEDICAL
+                            </h1>
+                        </div>
+                    </Link>
                     <p className='w-[269px] h-[48px] text-gray-400 mt-[30px]'>
                         The company's goal is to  provied thepopulation with high-quality medical equipment and create a healthy future.
                     </p>
