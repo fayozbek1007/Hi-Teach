@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { RiArrowDownWideLine } from "react-icons/ri";
 
+
 const Navbar = () => {
     const [selectedLanguage, setSelectedLanguage] = useState('Eng');
 
@@ -30,20 +31,20 @@ const Navbar = () => {
                         <li className="relative group text-[#FFFFFF] text-[16px] leading-[24px] font-[400] hover:text-gray-300">
                             <Link href="">About us</Link>
                             <ul className="absolute left-0 hidden group-hover:block shadow-lg px-[10px] py-[10px] z-[2] w-[160px] backgroun-li rounded-[15px]">
-                                <li className="text-[white] py-[4px] rounded-[12px] hover:bg-[#6060e6] px-[10px] "><Link href="/company">Company</Link></li>
-                                <li className="text-[white] py-[4px] rounded-[12px] hover:bg-[#6060e6] px-[10px] "><Link href="">Achievements</Link></li>
-                                <li className="text-[white] py-[4px] rounded-[12px] hover:bg-[#6060e6] px-[10px] "><Link href="">Team</Link></li>
-                                <li className="text-[white] py-[4px] rounded-[12px] hover:bg-[#6060e6] px-[10px] "><Link href="">Gallery</Link></li>
+                                <li className="text-[white] py-[4px] rounded-[12px] hover:bg-[#8a8a8c] px-[10px] "><Link href="/company">Company</Link></li>
+                                <li className="text-[white] py-[4px] rounded-[12px] hover:bg-[#8a8a8c] px-[10px] "><Link href="">Achievements</Link></li>
+                                <li className="text-[white] py-[4px] rounded-[12px] hover:bg-[#8a8a8c] px-[10px] "><Link href="">Team</Link></li>
+                                <li className="text-[white] py-[4px] rounded-[12px] hover:bg-[#8a8a8c] px-[10px] "><Link href="">Gallery</Link></li>
                             </ul>
                         </li>
                         <li className='text-[#FFFFFF] text-[16px] leading-[24px] font-[400] hover:text-gray-300'>
-                            <Link href="">News</Link>
+                            <Link href="/news">News</Link>
                         </li>
                         <li className='text-[#FFFFFF] text-[16px] leading-[24px] font-[400] hover:text-gray-300'>
-                            <Link href="">Blog</Link>
+                            <Link href="/blog">Blog</Link>
                         </li>
                         <li className='text-[#FFFFFF] text-[16px] leading-[24px] font-[400] hover:text-gray-300'>
-                            <Link href="">Contacts</Link>
+                            <Link href="/contack">Contacts</Link>
                         </li>
                     </ul>
                     <ul className='w-[60px] z-[4]'>
