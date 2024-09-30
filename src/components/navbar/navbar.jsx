@@ -11,6 +11,10 @@ const Navbar = () => {
         setSelectedLanguage(language);
     };
 
+    const handelClickcolor = (color) => {
+        setchangechColor(color);
+    };
+
     return (
         <div className='w-[100%] background-image'>
             <div className='w-[1200px] h-[145px] flex mx-[auto] my-0 justify-between items-center'>
@@ -44,7 +48,7 @@ const Navbar = () => {
                             <Link href="/blog">Blog</Link>
                         </li>
                         <li className='text-[#FFFFFF] text-[16px] leading-[24px] font-[400] hover:text-gray-300'>
-                            <Link href="/contack">Contacts</Link>
+                            <Link href="/contact">Contacts</Link>
                         </li>
                     </ul>
                     <ul className='w-[60px] z-[4]'>

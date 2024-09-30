@@ -3,7 +3,7 @@ import Contactinfo from '../../pages/Medical/Contact/Contactinfo';
 
 const Contackts = () => {
     return (
-        <div>
+        <div className='my-container'>
             <Contactinfo />
         </div>
     );

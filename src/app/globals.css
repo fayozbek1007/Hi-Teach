@@ -44,6 +44,13 @@
 .background-img-aboutus {
   background-image: url('https://ht-med.uz/_next/image?url=%2Fcard_logo%2FenLang.png&w=1920&q=75');
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
   width: 100%;
-  height: 260px;
+  height: 220px;
+}
+
+.my-container{
+  width: 1200px;
+  margin: 0 auto;
 }

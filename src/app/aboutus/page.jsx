@@ -1,4 +1,4 @@
-import Company from '@/pages/About us/company/company';
+import Company from '@/pages/Aboutus/company/company';
 import React from 'react';
 
 const Page = () => {
