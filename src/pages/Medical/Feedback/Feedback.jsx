@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react';
+'use client';
+
+import React, { useEffect, useState, useCallback } from 'react';
 import { FaAnglesLeft, FaAnglesRight } from "react-icons/fa6";
 import Image from 'next/image';
 
@@ -19,18 +21,18 @@ const Feedback = () => {
         fetchTema();
     }, []);
 
-    const handleNext = () => {
+    const handleNext = useCallback(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % feedback?.results?.length);
-    };
+    }, [feedback]);
 
-    const handlePrev = () => {
+    const handlePrev = useCallback(() => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + feedback?.results?.length) % feedback?.results?.length);
-    };
+    }, [feedback]);
 
     useEffect(() => {
         const interval = setInterval(handleNext, 4000);
         return () => clearInterval(interval);
-    }, [handleNext, feedback]); 
+    }, [handleNext]);
 
     return (
         <div className='flex flex-col items-center mt-[20px]'>

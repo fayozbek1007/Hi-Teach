@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className='w-[100%] background-image'>
             <div className='w-[1200px] h-[145px] flex mx-[auto] my-0 justify-between items-center'>
                 <div className='flex gap-[26px]'>
-                    <Link href={"/"}><img className='w-[99px] h-[82px]' src="/navimg.svg" alt="" /></Link>
+                    <Link href={"/"}><Image width={99} height={82} src="/navimg.svg" alt="" /></Link>
                     <h1 className='w-[136px] h-[84px] text-[28px] leading-[28px] font-[600] text-white'>
                         HI TECH ORIENT MEDICAL
                     </h1>

@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Link from 'next/link';
 import { citymenu } from './api/cety';
+import Image from 'next/image';
 
 const CompanyMapCity = () => {
     const [mapcity, Setmapcity] = useState([]);
