@@ -8,6 +8,7 @@ import Workflow from '../Worflow/workflow';
 import OurServies from '../OurServies/OurServies';
 import Feedback from '../Feedback/Feedback';
 import Contactinfo from '../Contact/Contactinfo';
+import Image from 'next/image';
 
 const Medicalmenu = () => {
     return (
@@ -18,7 +19,7 @@ const Medicalmenu = () => {
                         Medical equipment from the best manufacturers
                     </h1>
                     <p className='text-[14px] font-[400] leading-[24px] text-[#8C8C8C] mt-[20px]'>
-                        ET400 is a multifunctional universal obstetric table with a mechanical-hydraulic drive, specially designed for safe positioning of the patient during gynecological and obstetric operations, examinations and childbirth in gynecological departments, women's consultations, maternity hospitals.
+                        ET400 is a multifunctional universal obstetric table with a mechanical-hydraulic drive, specially designed for safe positioning of the patient during gynecological and obstetric operations, examinations and childbirth in gynecological departments, women&apos;s consultations, maternity hospitals.
                     </p>
                     <div className="mt-[40px]">
                         <Button>
@@ -27,7 +28,7 @@ const Medicalmenu = () => {
                     </div>
                 </div>
                 <div>
-                    <img className='w-[701px] h-[412px] ' src="/medical.svg" alt="" />
+                    <Image className='w-[701px] h-[412px]' src="/medical.svg" alt="Medical equipment" width={701} height={412} />
                 </div>
             </div>
             <div className='mt-[30px] flex justify-between'>
@@ -38,7 +39,7 @@ const Medicalmenu = () => {
                             VINNO E20
                         </h1>
                         <p className='text-[14px] font-[400] leading-[24px] text-[#8C8C8C] mt-[20px]'>
-                            Accurate scanning of any track can be achieved with high-quality QuartZ. Multiple curved tomography trajectories are more suitable for the patient's dental arch.
+                            Accurate scanning of any track can be achieved with high-quality QuartZ. Multiple curved tomography trajectories are more suitable for the patient&apos;s dental arch.
                         </p>
                         <div className="mt-[20px] flex items-center gap-[10px]">
                             <FaArrowAltCircleRight className='w-[30px] h-[30px]' />
@@ -46,7 +47,7 @@ const Medicalmenu = () => {
                         </div>
                     </div>
                     <div>
-                        <img className='w-[217.47px] h-[295px] ' src="/medik1.svg" alt="" />
+                        <Image className='w-[217.47px] h-[295px]' src="/medik1.svg" alt="Ultrasound device" width={217.47} height={295} />
                     </div>
                 </div>
                 <div className='flex w-[591px] h-[295px] px-[25px] py-[15px] rounded-[40px] bg-[#BDFF00]'>
@@ -55,7 +56,7 @@ const Medicalmenu = () => {
                             SMART 3D-X. Dental 3D X-ray
                         </h1>
                         <p className='text-[14px] font-[400] leading-[24px] text-[#8C8C8C] mt-[20px]'>
-                            Accurate scanning of any track can be achieved with high-quality QuartZ. Multiple curved tomography trajectories are more suitable for the patient's dental arch.
+                            Accurate scanning of any track can be achieved with high-quality QuartZ. Multiple curved tomography trajectories are more suitable for the patient&apos;s dental arch.
                         </p>
                         <div className="mt-[20px] flex items-center gap-[10px]">
                             <FaArrowAltCircleRight className='w-[30px] h-[30px]' />
@@ -63,7 +64,7 @@ const Medicalmenu = () => {
                         </div>
                     </div>
                     <div>
-                        <img className='w-[217.47px] h-[295px] ' src="/medik2.svg" alt="" />
+                        <Image className='w-[217.47px] h-[295px]' src="/medik2.svg" alt="Dental 3D X-ray" width={217.47} height={295} />
                     </div>
                 </div>
             </div>
@@ -92,17 +93,15 @@ const Medicalmenu = () => {
                         Workflow
                     </h1>
                     <p className='border-[1.5px] border-[#0000008f] w-[100%] h-[1px] mb-[-15px]'></p>
-
                 </div>
                 <Workflow />
             </div>
             <div className='mt-[30px]'>
                 <div className='flex items-center gap-[15px]'>
                     <h1 className='w-[220px] font-[700] text-[32px] leading-[48px] text-[#2B2A29]'>
-                        Our Servies
+                        Our Services
                     </h1>
                     <p className='border-[1.5px] border-[#0000008f] w-[100%] h-[1px] mb-[-15px]'></p>
-
                 </div>
                 <div className='py-[15px] px-[15px]'>
                     <OurServies />
@@ -114,7 +113,6 @@ const Medicalmenu = () => {
                         Our International partners
                     </h1>
                     <p className='border-[1.5px] border-[#0000008f] w-[90%] h-[1px] mb-[-15px]'></p>
-
                 </div>
                 <div className='py-[15px] px-[15px]'>
                     <Ourinter />
@@ -126,7 +124,6 @@ const Medicalmenu = () => {
                         Feedbacks of clients
                     </h1>
                     <p className='border-[1.5px] border-[#0000008f] w-[90%] h-[1px] mb-[-15px]'></p>
-
                 </div>
                 <div className='py-[15px] px-[15px]'>
                     <Feedback />
@@ -138,7 +135,6 @@ const Medicalmenu = () => {
                         Contact information     
                     </h1>
                     <p className='border-[1.5px] border-[#0000008f] w-[90%] h-[1px] mb-[-15px]'></p>
-
                 </div>
                 <div className='py-[15px] px-[15px]'>
                     <Contactinfo />
@@ -146,7 +142,6 @@ const Medicalmenu = () => {
             </div>
         </div>
     );
-
 }
 
 export default Medicalmenu;

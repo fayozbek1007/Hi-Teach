@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
     return (
@@ -8,17 +9,17 @@ const Footer = () => {
                 <div>
                     <Link href={"/"}>
                         <div className='flex gap-[26px] w-[30%]'>
-                            <img className='w-[99px] h-[82px]' src="/navimg.svg" alt="" />
+                            <Image className='w-[99px] h-[82px]' src="/navimg.svg" alt="" />
                             <h1 className='w-[136px] h-[84px] text-[28px] leading-[28px] font-[600] text-white'>
                                 HI TECH ORIENT MEDICAL
                             </h1>
                         </div>
                     </Link>
                     <p className='w-[269px] h-[48px] text-gray-400 mt-[30px]'>
-                        The company's goal is to  provied thepopulation with high-quality medical equipment and create a healthy future.
+                        The companys goal is to  provied thepopulation with high-quality medical equipment and create a healthy future.
                     </p>
                     <div className='mt-[80px] gap-[20px] flex items-center'>
-                        <img className='w-[40px] h-[40px]' src="/call.svg" alt="call" />
+                        <Image className='w-[40px] h-[40px]' src="/call.svg" alt="call" />
                         <div>
                             <p className='text-[15px] text-gray-400'>Служба поддержки</p>
                             <p className='font-[600] text-[20px] text-gray-300'>+998 (97) 131 07 89</p>
@@ -61,18 +62,18 @@ const Footer = () => {
                         </ul>
                         <div className='mt-[50px]'>
                             <div className='overflow-hidden w-[87.68px] h-[87.68px] bg-[#4F9E2F] px-[33px] py-[27px] custom-clip mb-[-40px]'>
-                                <img src="/facebook.svg" alt="" className='w-[30px] h-[30px]' />
+                                <Image src="/facebook.svg" alt="" className='w-[30px] h-[30px]' />
                             </div>
                             <div className='flex w-[200px] ml-[-48px] gap-[10px]'>
                                 <div className='overflow-hidden w-[87.68px] h-[87.68px] bg-[#4F9E2F] px-[33px] py-[27px] custom-clip'>
-                                    <img src="/insta.svg" className='w-[30px] h-[30px]' alt="" />
+                                    <Image src="/insta.svg" className='w-[30px] h-[30px]' alt="" />
                                 </div>
                                 <div className='overflow-hidden w-[87.68px] h-[87.68px] bg-[#4F9E2F] px-[33px] py-[27px] custom-clip'>
-                                    <img src="/telegram.svg" alt="" className='w-[30px] h-[30px]' />
+                                    <Image src="/telegram.svg" alt="" className='w-[30px] h-[30px]' />
                                 </div>
                             </div>
                             <div className='overflow-hidden w-[87.68px] h-[87.68px] bg-[#4F9E2F] px-[33px] py-[27px] custom-clip mt-[-40px]'>
-                                <img src="/youtebe.svg" alt="" className='w-[30px] h-[30px]' />
+                                <Image src="/youtebe.svg" alt="" className='w-[30px] h-[30px]' />
                             </div>
                         </div>
                     </div>

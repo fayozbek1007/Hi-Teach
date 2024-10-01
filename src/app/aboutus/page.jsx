@@ -1,4 +1,4 @@
-import Company from '@/pages/Aboutus/company/company';
+import Company from '../company/page';
 import React from 'react';
 
 const Page = () => {

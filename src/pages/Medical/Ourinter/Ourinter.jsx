@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 const Ourinter = () => {
     const [categories, setCategories] = useState([]);
@@ -34,11 +35,11 @@ const Ourinter = () => {
         <div className='flex flex-wrap  gap-[20px] mt-[20px] mx-[auto] my-0 justify-evenly  w-[1200px]'>
             {categories.length > 0 ? (
                 categories.map((item) => (
-                    <Link href={"/"}>
+                    <Link key={item.id} href={"/"}>
                         <div
                             className="w-[282.4px] h-[159.4px] items-center justify-center mx-auto rounded-[14px] bg-[#00000006] hover:border-[#00000044] hover:border-[3px] shadow-md transition-all duration-200"
                         >
-                            <img
+                            <Image
                                 className="w-[262.4px] h-[149.4px] mx-[auto] my-0"
                                 src={item.image}
                                 alt={item.name || 'Category'}

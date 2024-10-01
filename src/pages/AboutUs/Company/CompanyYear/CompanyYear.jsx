@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import { yearmenu } from './api';
+import { imageOptimizer } from 'next/dist/server/image-optimizer';
+import Image from 'next/image';
 
 const CompanyYear = () => {
     const [selectedYear, setSelectedYear] = useState(yearmenu[0]);
@@ -32,7 +34,7 @@ const CompanyYear = () => {
                 <div className='w-[40%] h-[550px] p-[20px] bg-[#ffffff] rounded-[15px] shadow-md '>
                     {selectedYear && (
                         <>
-                            <img src={selectedYear.img} alt={selectedYear.year} className='w-[440px] h-[250px] object-cover rounded-[10px]' />
+                            <Image src={selectedYear.img} alt={selectedYear.year} className='w-[440px] h-[250px] object-cover rounded-[10px]' />
                             <p className='mt-[20px] text-[17px] text-[#333]'>{selectedYear.description}</p>
                         </>
                     )}

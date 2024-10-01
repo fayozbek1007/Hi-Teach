@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { FaPlus } from "react-icons/fa";
 import { RxDividerHorizontal } from "react-icons/rx";
+import Image from 'next/image';
 
 const Catalogmenu = () => {
     const [leftCatalog, setLeftCatalog] = useState([]);
@@ -38,7 +39,7 @@ const Catalogmenu = () => {
                                     onClick={() => toggleCatalog(catalog.id)}
                                 >
                                     <div className='flex items-center gap-[20px]'>
-                                        <img className='w-[40px] h-[40px]' src={catalog.image} alt={catalog.name} />
+                                        <Image className='w-[40px] h-[40px]' src={catalog.image} alt={catalog.name} />
                                         <h2 className='font-[400] text-[16px]'>{catalog.name}</h2>
                                     </div>
                                     {isExpanded ? (

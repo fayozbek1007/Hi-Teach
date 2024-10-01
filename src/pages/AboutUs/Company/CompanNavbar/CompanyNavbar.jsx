@@ -15,8 +15,8 @@ const CompanyNavbar = () => {
                         All equipment we supply has registration certificates, certificates of conformity and sanitary and epidemiological conclusions.
                         All equipment comes with a 1 to 2 year warranty (depending on the equipment).
                         Based on your requirements, we are ready to equip any medical institution and private medical center from scratch.
-                        Service engineers and managers undergo annual certification and training at manufacturers' factories.
-                        Our company’s employees will help you choose equipment based on your wishes and requirements. By contacting us, you will receive high-quality, modern and affordable equipment.
+                        Service engineers and managers undergo annual certification and training at manufacturers factories.
+                        Our companys employees will help you choose equipment based on your wishes and requirements. By contacting us, you will receive high-quality, modern and affordable equipment.
                     </p>
                 </div>
                 <div className='flex justify-between items-center w-[1050px] mx-[auto] my-0 mt-[30px]'>

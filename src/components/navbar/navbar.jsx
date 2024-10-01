@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { RiArrowDownWideLine } from "react-icons/ri";
+import Image from 'next/image';
 
 
 const Navbar = () => {
@@ -54,21 +55,21 @@ const Navbar = () => {
                     <ul className='w-[60px] z-[4]'>
                         <li className="relative group text-white font-[400] text-[16px]">
                             <div className='flex items-center gap-[10px] hover:text-gray-300'>
-                                <img src={selectedLanguage === 'Eng' ? "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Russia.png" : selectedLanguage === 'Uz' ? "https://tfi.uz/photos/1/photos/flag-1024x512.jpg" : "https://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_the_United_States_%28Pantone%29.svg"} alt="Selected Flag" className="w-[30px] h-[30px] rounded-full my-[5px]" />
+                                <Image src={selectedLanguage === 'Eng' ? "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Russia.png" : selectedLanguage === 'Uz' ? "https://tfi.uz/photos/1/photos/flag-1024x512.jpg" : "https://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_the_United_States_%28Pantone%29.svg"} alt="Selected Flag" className="w-[30px] h-[30px] rounded-full my-[5px]" />
                                 <span>{selectedLanguage}</span>
                                 <RiArrowDownWideLine />
                             </div>
                             <ul className="absolute left-0 mt-[1px] hidden group-hover:block bg-white shadow-lg p-2 w-[100px] backgroun-li rounded-[12px]">
                                 <li className="py-1 flex items-center text-white font-[500] text-[16px]" onClick={() => handleLanguageChange('Uz', "https://tfi.uz/photos/1/photos/flag-1024x512.jpg")}>
-                                    <img src="https://tfi.uz/photos/1/photos/flag-1024x512.jpg" alt="Uz Flag" className="w-[30px] h-[30px] rounded-full my-[5px]" />
+                                    <Image src="https://tfi.uz/photos/1/photos/flag-1024x512.jpg" alt="Uz Flag" className="w-[30px] h-[30px] rounded-full my-[5px]" />
                                     <Link className="ml-[10px]" href="">Uz</Link>
                                 </li>
                                 <li className="py-1 flex items-center text-white font-[500] text-[16px]" onClick={() => handleLanguageChange('Ru', "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Russia.png")}>
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Russia.png" alt="Eng Flag" className="w-[30px] h-[30px] rounded-full my-[5px]" />
+                                    <Image src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Russia.png" alt="Eng Flag" className="w-[30px] h-[30px] rounded-full my-[5px]" />
                                     <Link className="ml-[10px]" href="">Ru</Link>
                                 </li>
                                 <li className="py-1 flex items-center text-white font-[500] text-[16px]" onClick={() => handleLanguageChange('Eng', "https://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_the_United_States_%28Pantone%29.svg")}>
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_the_United_States_%28Pantone%29.svg" alt="Ru Flag" className="w-[30px] h-[30px] rounded-full my-[5px]" />
+                                    <Image src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_the_United_States_%28Pantone%29.svg" alt="Ru Flag" className="w-[30px] h-[30px] rounded-full my-[5px]" />
                                     <Link className="ml-[10px]" href="">Eng</Link>
                                 </li>
                             </ul>

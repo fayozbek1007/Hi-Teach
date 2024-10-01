@@ -1,6 +1,7 @@
 import { benifst } from '@/JS/kategories';
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 const Benifits = () => {
     return (
@@ -12,7 +13,7 @@ const Benifits = () => {
                         className="w-[220px] h-[270px] flex flex-col items-center justify-center mx-auto rounded-[14px] bg-[#0000000e] border-[1px] border-transparent hover:border-[2.5px] hover:border-[#00000063] transition-all duration-3000"
                     >
                         <Link href={"/"}>
-                            <img src={benif.img} alt="" className="block mx-auto" />
+                            <Image src={benif.img} alt="" className="block mx-auto" />
                             <div className="mt-[20px] text-center">
                                 <h3 className="font-[600] text-[18px] w-[180px]">
                                     {benif.name}

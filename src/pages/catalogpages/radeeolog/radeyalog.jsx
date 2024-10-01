@@ -3,6 +3,7 @@
 import axios from 'axios';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 const Radeyalog1 = () => {
     const [radeol, setRadeol] = useState([]);
@@ -22,9 +23,9 @@ const Radeyalog1 = () => {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4">
             {radeol.map((item) => (
-                <Link href={''}>
-                    <div key={item.id} className="bg-white p-4 rounded-lg shadow-md border-[1px] border-[#00000047] w-[240px] h-[350px] hover:border-[#00000095] hover:border-[2px] transition duration-400">
-                        <img className="w-full h-40 object-cover rounded-t-lg" src={item.poster_url} alt={item.name} />
+                <Link key={item.id} href={''}>
+                    <div className="bg-white p-4 rounded-lg shadow-md border-[1px] border-[#00000047] w-[240px] h-[350px] hover:border-[#00000095] hover:border-[2px] transition duration-400">
+                        <Image className="w-full h-40 object-cover rounded-t-lg" src={item.poster_url} alt={item.name} />
                         <h3 className="text-lg font-semibold mt-2">{item.title}</h3>
                         <p className="text-gray-600 mt-[20px]">{item.status}</p>
                     </div>
