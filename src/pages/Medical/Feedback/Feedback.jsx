@@ -44,7 +44,7 @@ const Feedback = () => {
                             style={{ display: isActive ? 'block' : 'none' }}
                         >
                             <div className='flex gap-[30px] items-center'>
-                                <Image className='w-[100px] h-[100px] rounded-full' src={item.image} alt={item.full_name} width={100} height={100} />
+                                <Image className='rounded-full' src={item.image} alt={item.full_name} width={100} height={100} />
                                 <div>
                                     <p className='font-[500] text-[16px]'>{item.full_name}</p>
                                     <p className='font-[400] text-[14px]'>{item.position}</p>

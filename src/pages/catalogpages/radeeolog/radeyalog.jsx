@@ -25,7 +25,7 @@ const Radeyalog1 = () => {
             {radeol.map((item) => (
                 <Link key={item.id} href={''}>
                     <div className="bg-white p-4 rounded-lg shadow-md border-[1px] border-[#00000047] w-[240px] h-[350px] hover:border-[#00000095] hover:border-[2px] transition duration-400">
-                        <Image className="w-full h-40 object-cover rounded-t-lg" src={item.poster_url} alt={item.name} />
+                        <Image width={700} height={40} className="object-cover rounded-t-lg" src={item.poster_url} alt={item.name} />
                         <h3 className="text-lg font-semibold mt-2">{item.title}</h3>
                         <p className="text-gray-600 mt-[20px]">{item.status}</p>
                     </div>

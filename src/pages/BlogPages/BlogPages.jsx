@@ -27,7 +27,7 @@ const BlogPages = () => {
                 <div>
                     {blog.map((bloges) => (
                         <div key={bloges.id} className='bg-[#ffffff54] my-4 rounded-[30px] p-[20px] shadow flex gap-[40px] w-[100%]'>
-                            <Image className='w-[300px] h-[200px] rounded-[12px]' src={bloges.image_url} alt={bloges.title} />
+                            <Image width={300} height={200} className='rounded-[12px]' src={bloges.image_url} alt={bloges.title} />
                             <div>
                                 <div>
                                     <h2 className='text-xl font-bold'>{bloges.slug}</h2>

@@ -39,7 +39,7 @@ const CompanyMapCity = () => {
                             <Link href={''} key={item.id}>
                                 <div className='w-[215px] h-[240px] bg-[#00000008] mt-[20px] rounded-[20px] py-[20px] items-center'>
                                     <div className='mx-[auto] my-0 w-[80px]' >
-                                        <Image className='w-[80px] h-[80px]' src={item.image} alt={item.name} />
+                                        <Image width={80} height={80} src={item.image} alt={item.name} />
                                     </div>
                                     <div className='text-center'>
                                         <p className='font-[700] text-[50px]'>

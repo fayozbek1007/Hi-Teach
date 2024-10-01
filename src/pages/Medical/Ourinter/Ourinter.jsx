@@ -40,9 +40,11 @@ const Ourinter = () => {
                             className="w-[282.4px] h-[159.4px] items-center justify-center mx-auto rounded-[14px] bg-[#00000006] hover:border-[#00000044] hover:border-[3px] shadow-md transition-all duration-200"
                         >
                             <Image
-                                className="w-[262.4px] h-[149.4px] mx-[auto] my-0"
+                                className="mx-[auto] my-0"
                                 src={item.image}
                                 alt={item.name || 'Category'}
+                                width={262.4}
+                                height={149.4}
                             />
                         </div>
                     </Link>

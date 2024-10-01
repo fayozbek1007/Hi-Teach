@@ -9,7 +9,7 @@ const Footer = () => {
                 <div>
                     <Link href={"/"}>
                         <div className='flex gap-[26px] w-[30%]'>
-                            <Image className='w-[99px] h-[82px]' src="/navimg.svg" alt="" />
+                            <Image width={99} height={82} src="/navimg.svg" alt="" />
                             <h1 className='w-[136px] h-[84px] text-[28px] leading-[28px] font-[600] text-white'>
                                 HI TECH ORIENT MEDICAL
                             </h1>
@@ -19,7 +19,7 @@ const Footer = () => {
                         The companys goal is to  provied thepopulation with high-quality medical equipment and create a healthy future.
                     </p>
                     <div className='mt-[80px] gap-[20px] flex items-center'>
-                        <Image className='w-[40px] h-[40px]' src="/call.svg" alt="call" />
+                        <Image width={40} height={40} src="/call.svg" alt="call" />
                         <div>
                             <p className='text-[15px] text-gray-400'>Служба поддержки</p>
                             <p className='font-[600] text-[20px] text-gray-300'>+998 (97) 131 07 89</p>
@@ -62,18 +62,18 @@ const Footer = () => {
                         </ul>
                         <div className='mt-[50px]'>
                             <div className='overflow-hidden w-[87.68px] h-[87.68px] bg-[#4F9E2F] px-[33px] py-[27px] custom-clip mb-[-40px]'>
-                                <Image src="/facebook.svg" alt="" className='w-[30px] h-[30px]' />
+                                <Image src="/facebook.svg" alt="" width={30} height={30} />
                             </div>
                             <div className='flex w-[200px] ml-[-48px] gap-[10px]'>
                                 <div className='overflow-hidden w-[87.68px] h-[87.68px] bg-[#4F9E2F] px-[33px] py-[27px] custom-clip'>
-                                    <Image src="/insta.svg" className='w-[30px] h-[30px]' alt="" />
+                                    <Image width={30} height={30} src="/insta.svg" alt="" />
                                 </div>
                                 <div className='overflow-hidden w-[87.68px] h-[87.68px] bg-[#4F9E2F] px-[33px] py-[27px] custom-clip'>
-                                    <Image src="/telegram.svg" alt="" className='w-[30px] h-[30px]' />
+                                    <Image width={30} height={30} src="/telegram.svg" alt="" />
                                 </div>
                             </div>
                             <div className='overflow-hidden w-[87.68px] h-[87.68px] bg-[#4F9E2F] px-[33px] py-[27px] custom-clip mt-[-40px]'>
-                                <Image src="/youtebe.svg" alt="" className='w-[30px] h-[30px]' />
+                                <Image width={30} height={30} src="/youtebe.svg" alt="" />
                             </div>
                         </div>
                     </div>

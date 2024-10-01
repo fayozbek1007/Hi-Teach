@@ -43,15 +43,15 @@ const Conatckts = () => {
                                 Contact us
                             </h1>
                             <div className='mt-[20px] flex gap-[20px] items-center'>
-                                <Image className='w-[30px] h-[30px]' src="https://cdn.pixabay.com/photo/2020/10/17/13/21/telegram-5662082_1280.png" alt="Tech" />
-                                <Image className='w-[40px] h-[40px]' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZgGo1dFTnwof_9D4nCtubqVgOVhLm8iBZmQ&s" alt="Hi" />
+                                <Image width={30} height={30} src="https://cdn.pixabay.com/photo/2020/10/17/13/21/telegram-5662082_1280.png" alt="Tech" />
+                                <Image width={40} height={40} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZgGo1dFTnwof_9D4nCtubqVgOVhLm8iBZmQ&s" alt="Hi" />
                             </div>
                         </div>
                         <div className='mt-[10px]'>
                             <h1 className='font-[600] text-[20px]'>We are in social networks</h1>
                             <div className='flex gap-[10px] mt-[15px]'>
-                                <Image className='w-[40px] h-[40px]' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH7Zzq8Nfnm9bZM7G3TMvK5H3_bBYOjEGuXg&s" alt="Hi" />
-                                <Image className='w-[40px] h-[40px]' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC0ouaIaXYSPCpVxkRhdvCVAkECK4rOvh_YQ&s" alt="Tech" />
+                                <Image width={40} height={40} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH7Zzq8Nfnm9bZM7G3TMvK5H3_bBYOjEGuXg&s" alt="Hi" />
+                                <Image width={40} height={40} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC0ouaIaXYSPCpVxkRhdvCVAkECK4rOvh_YQ&s" alt="Tech" />
                             </div>
                         </div>
                     </div>

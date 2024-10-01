@@ -39,7 +39,7 @@ const Catalogmenu = () => {
                                     onClick={() => toggleCatalog(catalog.id)}
                                 >
                                     <div className='flex items-center gap-[20px]'>
-                                        <Image className='w-[40px] h-[40px]' src={catalog.image} alt={catalog.name} />
+                                        <Image width={40} height={40} src={catalog.image} alt={catalog.name} />
                                         <h2 className='font-[400] text-[16px]'>{catalog.name}</h2>
                                     </div>
                                     {isExpanded ? (

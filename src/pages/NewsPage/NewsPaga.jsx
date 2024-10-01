@@ -27,7 +27,7 @@ const NewsPaga = () => {
                 <div>
                     {news.map((item) => (
                         <div key={item.id} className='bg-[#ffffff54]  my-4 rounded-[30px] p-[20px] shadow flex gap-[40px] w-[100%]'>
-                            <Image className='w-[300px] h-[280px] rounded-[12px]' src={item.image_url} alt={item.title} />
+                            <Image width={300} height={280} className='rounded-[12px]' src={item.image_url} alt={item.title} />
                             <div>
 
                                 <div>

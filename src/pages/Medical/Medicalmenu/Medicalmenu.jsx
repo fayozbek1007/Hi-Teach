@@ -28,7 +28,7 @@ const Medicalmenu = () => {
                     </div>
                 </div>
                 <div>
-                    <Image className='w-[701px] h-[412px]' src="/medical.svg" alt="Medical equipment" width={701} height={412} />
+                    <Image src="/medical.svg" alt="Medical equipment" width={701} height={412} />
                 </div>
             </div>
             <div className='mt-[30px] flex justify-between'>
@@ -47,7 +47,7 @@ const Medicalmenu = () => {
                         </div>
                     </div>
                     <div>
-                        <Image className='w-[217.47px] h-[295px]' src="/medik1.svg" alt="Ultrasound device" width={217.47} height={295} />
+                        <Image src="/medik1.svg" alt="Ultrasound device" width={217.47} height={295} />
                     </div>
                 </div>
                 <div className='flex w-[591px] h-[295px] px-[25px] py-[15px] rounded-[40px] bg-[#BDFF00]'>
