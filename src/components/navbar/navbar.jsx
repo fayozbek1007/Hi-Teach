@@ -4,16 +4,13 @@ import Link from 'next/link';
 import { RiArrowDownWideLine } from "react-icons/ri";
 import Image from 'next/image';
 
-
 const Navbar = () => {
     const [selectedLanguage, setSelectedLanguage] = useState('Eng');
+    const [flagUrl, setFlagUrl] = useState("https://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_the_United_States_%28Pantone%29.svg");
 
     const handleLanguageChange = (language, flagUrl) => {
         setSelectedLanguage(language);
-    };
-
-    const handelClickcolor = (color) => {
-        setchangechColor(color);
+        setFlagUrl(flagUrl);
     };
 
     return (
@@ -30,7 +27,7 @@ const Navbar = () => {
                         <li className='text-[#FFFFFF] text-[16px] leading-[24px] font-[400] hover:text-gray-300'>
                             <Link href="/">Home</Link>
                         </li>
-                        <li className='text-[#FFFFFF] text-[16px] leading-[24px] font-[4000] hover:text-gray-300'>
+                        <li className='text-[#FFFFFF] text-[16px] leading-[24px] font-[400] hover:text-gray-300'>
                             <Link href="/catalog">Catalog</Link>
                         </li>
                         <li className="relative group text-[#FFFFFF] text-[16px] leading-[24px] font-[400] hover:text-gray-300">
@@ -55,7 +52,7 @@ const Navbar = () => {
                     <ul className='w-[60px] z-[4]'>
                         <li className="relative group text-white font-[400] text-[16px]">
                             <div className='flex items-center gap-[10px] hover:text-gray-300'>
-                                <Image src={selectedLanguage === 'Eng' ? "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Russia.png" : selectedLanguage === 'Uz' ? "https://tfi.uz/photos/1/photos/flag-1024x512.jpg" : "https://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_the_United_States_%28Pantone%29.svg"} alt="Selected Flag" width={30} height={30} className="rounded-full my-[5px]" />
+                                <Image src={flagUrl} alt="Selected Flag" width={30} height={30} className="rounded-full my-[5px]" />
                                 <span>{selectedLanguage}</span>
                                 <RiArrowDownWideLine />
                             </div>
@@ -69,7 +66,7 @@ const Navbar = () => {
                                     <Link className="ml-[10px]" href="">Ru</Link>
                                 </li>
                                 <li className="py-1 flex items-center text-white font-[500] text-[16px]" onClick={() => handleLanguageChange('Eng', "https://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_the_United_States_%28Pantone%29.svg")}>
-                                    <Image src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_the_United_States_%28Pantone%29.svg" alt="Ru Flag" width={30} height={30} className="rounded-full my-[5px]" />
+                                    <Image src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_the_United_States_%28Pantone%29.svg" alt="Ru Flag" width={30} height={40} className="rounded-full my-[5px]" />
                                     <Link className="ml-[10px]" href="">Eng</Link>
                                 </li>
                             </ul>

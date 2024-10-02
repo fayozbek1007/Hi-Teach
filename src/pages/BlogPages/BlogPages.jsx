@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { FaArrowAltCircleRight } from 'react-icons/fa'; 
@@ -19,23 +19,29 @@ const BlogPages = () => {
     }, []);
 
     return (
-        <div className='w-[100%] bg-[#E5E7EB] pb-[20px]'>
-            <div className='w-[1200px] mx-[auto] my-0'>
-                <div className='ml-[30px]'>
+        <div className='w-full bg-[#E5E7EB] pb-5'>
+            <div className='w-[1200px] mx-auto'>
+                <div className='ml-8'>
                     <h1 className='font-[600] text-[55px]'>Blog</h1>
                 </div>
                 <div>
                     {blog.map((bloges) => (
-                        <div key={bloges.id} className='bg-[#ffffff54] my-4 rounded-[30px] p-[20px] shadow flex gap-[40px] w-[100%]'>
-                            <Image width={300} height={200} className='rounded-[12px]' src={bloges.image_url} alt={bloges.title} />
+                        <div key={bloges.id} className='bg-[#ffffff54] my-4 rounded-[30px] p-5 shadow flex gap-10 w-full'>
+                            <Image 
+                                width={300} 
+                                height={200}  
+                                className='rounded-[12px]' 
+                                src={bloges.image_url} 
+                                alt={bloges.title} 
+                            />
                             <div>
                                 <div>
                                     <h2 className='text-xl font-bold'>{bloges.slug}</h2>
                                     <p className='text-gray-600'>{bloges.description}</p>
                                 </div>
-                                <div className='flex mt-[20px] items-center justify-between'>
+                                <div className='flex mt-5 items-center justify-between'>
                                     <p>{bloges.created_at}</p>
-                                    <div className='flex gap-[10px] items-center'>
+                                    <div className='flex gap-2 items-center'>
                                         <FaArrowAltCircleRight />
                                         Read more
                                     </div>
