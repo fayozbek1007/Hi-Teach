@@ -13,7 +13,7 @@ const Benifits = () => {
                         className="w-[220px] h-[270px] flex flex-col items-center justify-center mx-auto rounded-[14px] bg-[#0000000e] border-[1px] border-transparent hover:border-[2.5px] hover:border-[#00000063] transition-all duration-3000"
                     >
                         <Link href={"/"}>
-                            <Image src={benif.img} alt="" className="block mx-auto" width={200} height={200} />
+                            <Image src={benif.img} alt="" className="block mx-auto w-[100px] h-[90px]" width={100} height={100} />
                             <div className="mt-[20px] text-center">
                                 <h3 className="font-[600] text-[18px] w-[180px]">
                                     {benif.name}
